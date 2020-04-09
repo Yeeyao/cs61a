@@ -132,6 +132,8 @@ else:
 
 - An intrinsic name and its parent give an unique function object
 
+- 函数的 environment 中的 parent 是其定义所在的上下文
+
 ### Frame
 
 - 记录变量到值的绑定
