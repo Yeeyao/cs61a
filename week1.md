@@ -34,7 +34,7 @@
 
 - A function definition includes documentation describing the funtion, called docstring, which must be indented with the function body. Triple quoted.
 
-- call help with the name of a function as anargument, you see its docstring
+- call help with the name of a function as an argument, you see its docstring
 
 ```python
 """Compute the pressure in pascals aof an ideal gas."""
