@@ -34,7 +34,7 @@
 
 - A function definition includes documentation describing the funtion, called docstring, which must be indented with the function body. Triple quoted.
 
-- call help with the name of a function as anargument, you see its docstring
+- call help with the name of a function as an argument, you see its docstring
 
 ```python
 """Compute the pressure in pascals aof an ideal gas."""
@@ -70,6 +70,8 @@
     - 同时，docstring需要包含一个调用函数的语句(interactive session)。
 
         - 该interaction将在doctest module中被验证
+
+- 运行 python3 -m doctest -v [docname].py
 
 ```python
 >>> assert fib(8) == 13, 'The 8th Fibonacci number should be 13'
@@ -131,6 +133,8 @@ else:
 - name binding对于多个同名的变量，总是取最后一个binding，所以需要注意顺序的影响
 
 - An intrinsic name and its parent give an unique function object
+
+- 函数的 environment 中的 parent 是其定义所在的上下文
 
 ### Frame
 

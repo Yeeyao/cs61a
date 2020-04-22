@@ -1,6 +1,6 @@
 # week2
 
-## recurision
+## recursion
 
 - base case
 
@@ -12,4 +12,5 @@
 
 - using the recursive call to solve our problem
 
-    - use the solution to the smaller version of the problem to arrive at the solution to the original problem
+    - use the solution to the smaller version of the problem to arrive at the
+    solution to the original problem
