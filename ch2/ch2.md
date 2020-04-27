@@ -119,3 +119,13 @@
     - 一些复杂的操作可能需要将两个参数转换成第三种类型
 
     - 转换类型有信息丢失的 drawback
+
+## recursive object
+
+- linked list class
+
+- __repr__ python 使用该内置函数显示用户定义的数据结构的打印格式
+
+- tree class
+
+- sets and binary search tree
