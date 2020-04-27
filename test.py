@@ -89,3 +89,32 @@ def dutchNatFlag(arr):
   return arr
   
 print dutchNatFlag([2,2,2,0,0,0,1,1]) 
+
+# disc07
+def sum_nums(lnk):
+    if lnk is Link.empty:
+        return 0
+    return lnk.first + sum_nums(lnk.rest) 
+
+def multiply_links(lst_of_links):
+    product = 1
+    for lnk in lst_of_links:
+        if lnk is List.empty:
+            return Link.empty
+        product *= lnk.first
+    rest_lst_of_links = [lnk.rest for lnk in lst_of_links]
+    return Link(product, multiply_links(rest_lst_of_links))
+
+"这个需要好好学"
+def filter_link(link, f):
+    while link is not Link.empty:
+        if f(link.first):
+            yield link.first
+        link = link.rest
+
+def filter_no_iter(link, f):
+    if link is Link.empty:
+        return
+    elif f(link.first):
+        yield link.first
+    yiled from filter_no_iter(link.rest, f)
