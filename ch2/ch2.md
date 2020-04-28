@@ -129,3 +129,17 @@
 - tree class
 
 - sets and binary search tree
+
+## efficiency
+
+- environment is active if it provides the evaluation context for some expression being evaluated
+
+- is inactive 当它第一次创建的 frame 返回的时候
+
+- fib 例子介绍了递归函数的一些概念，有一点类似尾递归的概念
+
+- 计算阶乘的优化例子，递归使用已经知道的结果来计算
+
+- 递归分析，计算函数调用的次数或者迭代的次数，同时找到每次调用的消耗
+
+- 在分析时间复杂度的时候，注意一下，是否有更小的常数时间复杂度
