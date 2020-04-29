@@ -37,3 +37,23 @@
     - 然后，句法分析器从 tokens 队列中生成语法树
 
 - read evaluate print loop
+
+## interpreters for language abstraction
+
+- calculator interpreter 还不能解析所有的 Scheme 表达式，比如 quotation or dotted lists
+
+- each Frame instance 表示一个环境，有一个 bindings 的字典
+
+- 将一个程序类比成一个抽象的机器。然后 Scheme 解释器可以看作是一个特殊的机器
+
+- eval procedure 允许计算一个已创建的表达式
+
+- macros 是 procedure 接受表达式作为输入并返回 Scheme 表达式作为输出
+
+    - define-macro Scheme 计算是先计算得到一个 macro 然后将 macro procedure 应用到操作数（这里操作数没有被计算）。
+
+    - 最后从 macro procedure 返回结果
+
+- a quote 可以让一个表达式不被计算 可以用 ' 或者 quote
+
+- a quasiquotes 则让表达式部分不会被计算
