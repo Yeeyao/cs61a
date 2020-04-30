@@ -38,6 +38,8 @@
 
 - read evaluate print loop
 
+- 这里有个例子，连接两个 list，不断对第一个 list 进行 car 操作，然后 cons 操作，递归完成。这里的过程就先遍历第一个参数
+
 ## interpreters for language abstraction
 
 - calculator interpreter 还不能解析所有的 Scheme 表达式，比如 quotation or dotted lists
@@ -57,3 +59,5 @@
 - a quote 可以让一个表达式不被计算 可以用 ' 或者 quote
 
 - a quasiquotes 则让表达式部分不会被计算
+
+## declarative programming
