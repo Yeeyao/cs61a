@@ -61,3 +61,7 @@
 - a quasiquotes 则让表达式部分不会被计算
 
 ## declarative programming
+
+## sql
+
+- 使用 || 将 select 中的字符串进行连接
